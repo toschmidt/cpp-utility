@@ -13,10 +13,10 @@ set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} --coverage
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
 
 # Standard Libraries
-include(${CMAKE_SOURCE_DIR}/cmake/threads.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/import/threads.cmake)
 
 # Test Framework
-include(${CMAKE_SOURCE_DIR}/cmake/catch2.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/import/catch2.cmake)
 
 # Implementation
 add_subdirectory(src)
