@@ -3,4 +3,5 @@
 
 # IntelliJ
 .idea
+cmake-build-*/
 
