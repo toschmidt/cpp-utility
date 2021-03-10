@@ -1,7 +1,7 @@
 # Header-Only Library (without source files):
-# add_library(<project-name> INTERFACE)
-# target_include_directories(<project-name> INTERFACE ${CMAKE_CURRENT_LIST_DIR})
-# target_link_libraries(<project-name> INTERFACE <dependencies>)
+add_library(cpp-utility INTERFACE)
+target_include_directories(cpp-utility INTERFACE ${CMAKE_CURRENT_LIST_DIR})
+target_link_libraries(cpp-utility INTERFACE <dependencies>)
 
 # Static Library (with source files):
 # file(GLOB_RECURSE CPP_FILES ${CMAKE_CURRENT_LIST_DIR}/*.cpp)
