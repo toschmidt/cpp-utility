@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-# Name of your project
-# project(<project-name>)
+project(cpp-utility)
 
 # C++ Standards
 set(CMAKE_CXX_STANDARD 20)
@@ -14,10 +13,10 @@ set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} --coverage
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE}")
 
 # Standard Libraries
-# include(${CMAKE_SOURCE_DIR}/cmake/threads.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/threads.cmake)
 
 # Test Framework
-# include(${CMAKE_SOURCE_DIR}/cmake/catch2.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/catch2.cmake)
 
 # Implementation
 add_subdirectory(src)
