@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.14)
 project(cpp-utility)
 
 # Options for building the project
-option(CPP_UTILITY_ENABLE_TESTING "Enable testing of the project." ON)
-option(CPP_UTILITY_ENABLE_BENCHMARKING "Enable benchmarking of the project." ON)
-option(CPP_UTILITY_ENABLE_INSTALL "Enable installation of the library." ON)
+option(ENABLE_TESTING "Enable testing of the project." ON)
+option(ENABLE_BENCHMARKING "Enable benchmarking of the project." ON)
+option(ENABLE_INSTALL "Enable installation of the library." ON)
 
 # C++ Standards
 set(CMAKE_CXX_STANDARD 20)
