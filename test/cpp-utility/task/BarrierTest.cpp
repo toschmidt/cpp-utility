@@ -10,7 +10,8 @@ TEST_CASE("Barrier") {
 
    queue.add_task([&counter](size_t) { counter += 10; });
    queue.add_task([&counter](size_t) {
-      usleep(1000);
+      // wait for 10 ms before reading the counter
+      usleep(10000);
       if (counter == 10) {
          counter += 10;
       }
