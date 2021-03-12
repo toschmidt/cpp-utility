@@ -11,3 +11,12 @@ target_link_libraries(cpp-utility INTERFACE)
 
 # For more information on library definitions in cmake see https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
 
+if (CPP_UTILITY_ENABLE_INSTALL)
+    # Install the project's header files (destination is relative to CMAKE_INSTALL_PREFIX)
+    message(STATUS "install_dir=${include_install_dir}")
+    install(
+            DIRECTORY ${PROJECT_SOURCE_DIR}/src/
+            DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+            FILES_MATCHING PATTERN "*.hpp"
+    )
+endif ()
