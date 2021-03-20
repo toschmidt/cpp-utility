@@ -6,7 +6,7 @@
 
 using namespace utility::perf;
 
-TEST_CASE("Perf Event") {
+TEST_CASE("Perf Event", "[!mayfail]") {
    const size_t n = 1e6;
 
    std::unordered_map<Counter, double> oracle{{INSTRUCTIONS, NAN}, {CYCLES, NAN}, {BRANCH_MISSES, NAN},

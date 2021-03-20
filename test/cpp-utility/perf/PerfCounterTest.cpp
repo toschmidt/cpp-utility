@@ -6,7 +6,7 @@
 
 using namespace utility::perf;
 
-TEST_CASE("Perf Counter") {
+TEST_CASE("Perf Counter", "[!mayfail]") {
    perf_hw_id eventId = PERF_COUNT_HW_MAX;
 
    SECTION("instructions") {
