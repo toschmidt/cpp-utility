@@ -8,4 +8,14 @@ namespace std {
          return hash<T1>()(p.first) ^ hash<T2>()(p.second);
       }
    };
+
+   /// Partial specializations for array types.
+   template<typename T>
+   struct hash<vector<T>> : public __hash_base<size_t, vector<T>> {
+      size_t operator()(vector<T> v) const noexcept {
+         return accumulate(v.begin(), v.end(), 0,
+                           [](const size_t& hash, const T& value) { return hash ^ std::hash<T>()(value); });
+      }
+   };
+
 } // namespace std
