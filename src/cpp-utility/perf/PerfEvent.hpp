@@ -1,8 +1,10 @@
 #pragma once
 
 #include "PerfCounter.hpp"
+#include <chrono>
 #include <cpp-utility/perf/definition/CounterDefinition.hpp>
 #include <cpp-utility/std/Hash.hpp>
+#include <stdexcept>
 
 namespace utility::perf {
 

@@ -2,7 +2,6 @@
 #include <catch2/catch.hpp>
 #include <cpp-utility/perf/Counter.hpp>
 #include <cpp-utility/perf/PerfEvent.hpp>
-#include <iostream>
 
 using namespace utility::perf;
 

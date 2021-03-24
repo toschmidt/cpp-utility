@@ -1,8 +1,6 @@
 #include "PerfTest.hpp"
 #include <catch2/catch.hpp>
 #include <cpp-utility/perf/PerfCounter.hpp>
-#include <iostream>
-#include <linux/perf_event.h>
 
 using namespace utility::perf;
 
