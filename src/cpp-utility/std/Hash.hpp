@@ -1,5 +1,7 @@
 #pragma once
 
+#include<numeric>
+
 namespace std {
    /// Partial specializations for pair types.
    template<typename T1, typename T2>
