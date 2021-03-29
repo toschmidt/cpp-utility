@@ -1,6 +1,8 @@
 #pragma once
 
 #include <iostream>
+#include <pair>
+#include <vector>
 
 namespace std {
 
@@ -13,6 +15,12 @@ namespace std {
    inline ostream& operator<<(ostream& out, const int8_t& v) {
       // print 8-bit numbers as numbers and not as chars
       out << static_cast<int>(v);
+      return out;
+   }
+
+   template<typename T1, typename T2>
+   inline ostream& operator<<(ostream& out, const pair<T1, T2>& p) {
+      out << "(" << p.first << ", " << p.second << ")";
       return out;
    }
 
