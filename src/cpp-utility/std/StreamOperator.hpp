@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 namespace std {
 
    inline ostream& operator<<(ostream& out, const uint8_t& v) {
